@@ -8,7 +8,7 @@ typedef union { uint64_t u64; double d; } U64double;
 
 class GmodPRNG {
 private:
-	uint64_t u[4];
+    uint64_t u[4];
     static const std::string deck[52];
 
     void TW223_GEN(uint64_t& z, uint64_t& r, const int& i, const int& k, const int& q, const int& s);
